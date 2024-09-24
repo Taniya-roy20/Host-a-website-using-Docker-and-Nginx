@@ -1,6 +1,4 @@
-**DOCKER**
-<br>
-<br>
+# DOCKER
 Docker is a platform that enables developers to create, deploy, and manage applications in lightweight containers. is a popular open source containerization tool used to provide a portable and consistent runtime environment for software applications, while consuming less resources than a traditional server or virtual machine. Docker uses containers, isolated user-space environments that run at the operating system level and share system resources such as the kernel and the filesystem.
 <br>
 <br>
@@ -18,9 +16,7 @@ Overall, Docker streamlines development workflows, improves resource utilization
 ![image](https://github.com/user-attachments/assets/180efde6-39b6-4834-9d12-451e1aa9d1b4)
 <br>
 <br>
-**CONTAINERS**
-<br>
-<br>
+# CONTAINERS
 Containers are lightweight, portable units that package an application and all its dependencies, including libraries, configuration files, and runtime. They run in isolation from one another on the same operating system kernel, which makes them more efficient than traditional virtual machines.
 
 Key characteristics of containers include:
@@ -36,9 +32,7 @@ Key characteristics of containers include:
 Overall, containers facilitate rapid development, testing, and deployment of applications, making them a cornerstone of modern DevOps practices.
 <br>
 <br>
-**NGINX**
-<br>
-<br>
+# NGINX
 NGINX is an open source web server used for serving static or dynamic websites, reverse proxying, load balancing, and other HTTP and proxy server capabilities. It was built to handle large amounts of concurrent connections, and is a popular web server used to host some of the largest and most high-traffic sites on the internet.
 ![image](https://github.com/user-attachments/assets/d5ae01a0-774f-4a84-8999-6e49c2fe3ca9)
 <br>
@@ -57,9 +51,41 @@ Key features of NGINX include:
 
 6.*Support for WebSockets:* NGINX supports real-time communication for applications that require persistent connections.
 ![image](https://github.com/user-attachments/assets/1eb25173-363a-4251-87d7-28419734e994)
-**Host a website using Docker and Nginx**
-<BR>
-<BR>
+<br><br>
+# Advantages of NGINX
+![image](https://github.com/user-attachments/assets/361486c1-b572-4b52-9b9f-d3ed6df6e333)
+<br>
+# HOW TO INSTALL NGINX
+In this tutorial, we’ll show you how to install NGINX on Linux. Open your Linux machine and run an update using the command below:
+<br>
+sudo apt-get update
+<br>
+<br>
+Next, run this command:
+
+sudo apt-get install nginx
+<br><br>
+Then, enable your firewall with the following:
+
+sudo ufw enable
+<br><br>
+To verify NGINX is installed, run the following:
+
+nginx -v
+<br><br>
+You can run the command below to find out if NGINX is running:
+
+sudo ufw status
+<br><br>
+After running this command, you should see the following:
+
+status: active
+<br><br>
+To check whether your NGINX server is working fine, run the following:
+
+sudo systemctl status nginx
+<br><br>
+# Host a website using Docker and Nginx
 1.Login to your AWS account and download your passkey and launch the EC2 instance.
 <BR>
 2.Launch PuTTY and add the IP address from instance and add key pair file and open the PuTTY terminal.
